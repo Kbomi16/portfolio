@@ -28,8 +28,8 @@
     <div class="header">Portfolio</div>
 
     <div class="list">
-      <div @click="movePage('/portfolio1')" data-aos="fade-up" class="item" style="background-image:url(/top1.jpg)"></div>
-      <div data-aos="fade-right" class="item" style="background-image:url(/top1.jpg)"></div>
+      <div @click="movePage('/portfolio1')" data-aos="fade-up" class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
+      <div data-aos="fade-right" class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
       <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
       <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
       <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
