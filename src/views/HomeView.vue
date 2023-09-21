@@ -11,13 +11,13 @@
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
-    <swiper-slide style="background-image:url(/top1.jpg)" class="slide">
+    <swiper-slide style="background-image:url(/portfolio/top1.jpg)" class="slide">
       <div class=header>명지전문대학교 정보통신공학과 김보미</div>
     </swiper-slide>
-    <swiper-slide style="background-image:url(/top2.jpg)" class="slide">
+    <swiper-slide style="background-image:url(/portfolio/top2.jpg)" class="slide">
       <div class=header>명지전문대학교 정보통신공학과 김보미</div>    
     </swiper-slide>
-    <swiper-slide style="background-image:url(/top3.jpg)" class="slide">
+    <swiper-slide style="background-image:url(/portfolio/top3.jpg)" class="slide">
       <div class=header>명지전문대학교 정보통신공학과 김보미</div>
     </swiper-slide>
   </swiper>
@@ -30,9 +30,9 @@
     <div class="list">
       <div @click="movePage('/portfolio1')" data-aos="fade-up" class="item" style="background-image:url(/top1.jpg)"></div>
       <div data-aos="fade-right" class="item" style="background-image:url(/top1.jpg)"></div>
-      <div class="item" style="background-image:url(/top1.jpg)"></div>
-      <div class="item" style="background-image:url(/top1.jpg)"></div>
-      <div class="item" style="background-image:url(/top1.jpg)"></div>
+      <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
+      <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
+      <div class="item" style="background-image:url(/portfolio/top1.jpg)"></div>
     </div>
   </div>
   
