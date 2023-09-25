@@ -9,15 +9,20 @@
     <div class="square2"></div>
     
   </div>
-  <div class="line1" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
-  <div class="line2" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
-  <div class="line3" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
+  <div class="line1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="line2" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="line3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="line4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="line5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="line6" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="aboutme" data-aos="fade-up" data-aos-anchor-placement="top-center">
     <Aboutme/>
   </div>
-
-  <!-- 포트폴리오  -->
-  <Portfolio />
+  
+  <div class="portfolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <Portfolio />
+  </div>
+  
 </template>
 
 <script>
@@ -80,7 +85,7 @@ export default defineComponent({
 
 .container {
   padding: 15rem;
-  background-color: #656A56;
+  background-image: linear-gradient(90deg, #833ab4, #f6595961, #f58686);
   background-size: cover;
   height: 100vh;
   flex-direction: column;
@@ -108,46 +113,80 @@ export default defineComponent({
   top: -25rem;
   left: 50rem;
   z-index: 1;
+  border-radius: 1rem;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .square2 {
   width: 28rem;
   height: 26.2rem;
-  background-color: #DDDEDB;
+  background-color: #833ab4;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 10rem;
-  left: 60rem;
+  top: 7rem;
+  left: 64rem;
+  border-radius: 1rem;
 }
 
 .aboutme {
   position: relative;
-  top: -40rem;
-  background-color: #DDDEDB;
-  height: 50rem;
+  top: -45.5rem;
+  background-image: linear-gradient(180deg, #ecc6c6, #fff);
+  height: 60rem;
   text-align: center;
   padding-top: 2rem;
 }
 .line1 {
   position: relative;
-  top: -40rem;
-  background-color: #868a7a;
-  height: 1rem;
+  top: -45rem;
+  background-color: #833ab4;
+  height: 0.5rem;
   text-align: center;
   padding-top: 2rem;
 }
 .line2 {
   position: relative;
-  top: -40rem;
-  background-color: #abada3;
-  height: 3rem;
+  top: -45.1rem;
+  background-color: #8953ac;
+  height: 0.8rem;
   text-align: center;
   padding-top: 2rem;
 }
 .line3 {
   position: relative;
-  top: -40rem;
-  background-color: #bdbdbd;
-  height: 5rem;
+  top: -45.2rem;
+  background-color: #9374a7;
+  height: 1rem;
   text-align: center;
   padding-top: 2rem;
+}
+.line4 {
+  position: relative;
+  top: -45.3rem;
+  background-color: #f58686;
+  height: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.line5 {
+  position: relative;
+  top: -45.4rem;
+  background-color: #dda0a0;
+  height: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.line6 {
+  position: relative;
+  top: -45.5rem;
+  background-color: #ecc6c6;
+  height: 1rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+.portfolio {
+  background-image: linear-gradient(180deg, #fff, #833ab4);
+  position: relative;
+  top: -45rem;
+  padding-top: 5rem;
 }
 </style>

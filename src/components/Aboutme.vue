@@ -1,23 +1,38 @@
 <template>
   <h1>About Me.</h1>
+  <h1 class="h1text">About Me.</h1>
 
-  <div class="info">
-
+  <div class="info" data-aos="fade-up" data-aos-anchor-placement="top-center">
     <swiper
-    :slides-per-view="1"
-    :space-between="50"
+    :spaceBetween="30"
+    :centeredSlides="true"
     :autoplay="{
-        delay: 2000, // 2초마다 슬라이드 전환
-        disableOnInteraction: false, // 사용자와 상호작용 후에도 계속 autoplay
-      }"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
+      delay: 2000,
+      disableOnInteraction: false,
+    }"
+    :navigation="true"
+    :modules="modules"
+    class="mySwiper"
   >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide data-text="HTML+CSS">HTML+CSS</swiper-slide>
+    <swiper-slide>JavaScript</swiper-slide>
+    <swiper-slide>Vue</swiper-slide>
+    <swiper-slide>React</swiper-slide>
+    <swiper-slide>GitHub</swiper-slide>
+    <swiper-slide>Slack</swiper-slide>
+    <swiper-slide>Notion</swiper-slide>
   </swiper>
-
+  <div class="profile">
+    <div class="circle">
+      <img class="img1" src="../assets/bomi2.png" alt="">
+    </div>
+    <div class="infos">
+      <button>Resume</button>
+      <button>GitHub</button>
+      <button>Velog</button>
+      <button>Notion</button>
+    </div>
+  </div>
 
   </div>
   
@@ -27,48 +42,118 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import { ref } from 'vue';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default {
-  components: {
+    components: {
       Swiper,
       SwiperSlide,
     },
     setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-
-      // Swiper를 ref로 만들어 컨트롤 가능하도록 합니다.
-      const swiper = ref(null);
-
       return {
-        onSwiper,
-        onSlideChange,
-        swiper
+        modules: [Autoplay, Pagination, Navigation],
       };
     },
-}
-
+  };
 </script>
 
 <style>
 h1 {
   font-family: 'PyeongChangPeace-Bold';
   font-size: 5rem;
-  text-shadow: 5px 3px 1px #656A56;
+  color: #fff;
+}
+.h1text {
+  font-family: 'PyeongChangPeace-Bold';
+  color: transparent; /* 텍스트를 투명하게 설정 */
+  font-size: 5rem;
+  -webkit-text-stroke: 2px #833ab4; /* 웹킷 브라우저 지원 */
+  -webkit-text-fill-color: transparent; /* 텍스트 내용을 투명하게 설정 */
+  position: relative;
+  top: -10rem;
+  left: -0.5rem;
 }
 .info {
-  border: solid #656A56 8px;
-  height: 50rem;
+  border: solid #9374a7 7px;
+  height: 40rem;
   border-radius: 30px;
   margin: 0 10rem;
+  position: relative;
+  top: -10rem;
 }
+
+/* swiper */
 .swiper {
   width: 100%;
   height: 10rem;
 }
+
+.swiper-slide {
+  font-family: 'PyeongChangPeace-Bold';
+  text-align: center;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: text; /* 텍스트에만 배경 적용 */
+  -webkit-background-clip: text; /* 웹킷 브라우저 지원 */
+  color: transparent; /* 텍스트 색상을 투명하게 설정 */
+  background-image: linear-gradient(90deg, #833ab4, #fff); /* 그라데이션 배경 생성 */
+  position: relative;
+  z-index: 1;
+}
+/* .swiper-slide::before {
+  content: attr(data-text); 
+  position: absolute;
+  top: 10;
+  left: 40;
+  font-family: 'PyeongChangPeace-Bold'; 
+  font-size: 5rem;
+  color: transparent; 
+  text-shadow: 1px 1px 2px #000; 
+  z-index: -1;
+} */
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.1);  
+}
+.img1 {
+  width: 20rem;
+}
+.infos {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: 'PyeongChangPeace-Light';
+  color: #fff;
+  font-size: 2rem;
+  background-color: #833ab4;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 5rem;
+  width: 20rem;
+  padding: 0.5rem;
+  border: #833ab4 2px solid;
+  font-weight: 800;
+}
+button:hover {
+  background-color: #fff;
+  color: #833ab4;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
 </style>
