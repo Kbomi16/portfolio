@@ -9,12 +9,15 @@
     <div class="square2"></div>
     
   </div>
-  <div class="line1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  <div class="lines">
+    <div class="line1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="line2" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="line3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="line4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="line5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
   <div class="line6" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+  </div>
+  
   <div class="aboutme" data-aos="fade-up" data-aos-anchor-placement="top-center">
     <Aboutme/>
   </div>
@@ -70,6 +73,7 @@ export default defineComponent({
 </script>
 
 <style>
+@import 'normalize.css';
 @font-face {
   font-family: 'AppleSDGothicNeoUL';
   src: url('../assets/fonts/AppleSDGothicNeoUL.ttf');
@@ -129,17 +133,19 @@ export default defineComponent({
 
 .aboutme {
   position: relative;
-  top: -45.5rem;
+  top: -40rem;
   background-image: linear-gradient(180deg, #ecc6c6, #fff);
   height: 60rem;
   text-align: center;
   padding-top: 2rem;
 }
+.lines {
+}
 .line1 {
   position: relative;
   top: -45rem;
   background-color: #833ab4;
-  height: 0.5rem;
+  height: 5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -147,7 +153,7 @@ export default defineComponent({
   position: relative;
   top: -45.1rem;
   background-color: #8953ac;
-  height: 0.8rem;
+  height: 5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -155,7 +161,7 @@ export default defineComponent({
   position: relative;
   top: -45.2rem;
   background-color: #9374a7;
-  height: 1rem;
+  height: 5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -163,7 +169,7 @@ export default defineComponent({
   position: relative;
   top: -45.3rem;
   background-color: #f58686;
-  height: 2rem;
+  height: 5rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -171,7 +177,7 @@ export default defineComponent({
   position: relative;
   top: -45.4rem;
   background-color: #dda0a0;
-  height: 3rem;
+  height: 10rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -179,7 +185,7 @@ export default defineComponent({
   position: relative;
   top: -45.5rem;
   background-color: #ecc6c6;
-  height: 1rem;
+  height: 30rem;
   text-align: center;
   padding-top: 2rem;
 }
