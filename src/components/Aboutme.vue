@@ -28,9 +28,9 @@
     </div>
     <div class="infos">
       <button>Resume</button>
-      <button>GitHub</button>
-      <button>Velog</button>
-      <button>Notion</button>
+      <button @click="goToGitHub">GitHub</button>
+      <button @click="goToVelog">Velog</button>
+      <button @click="goToNotion">Notion</button>
     </div>
   </div>
 
@@ -54,10 +54,21 @@ export default {
         modules: [Autoplay, Pagination, Navigation],
       };
     },
+    methods: {
+      goToGitHub: function() {
+        window.open("https://github.com/Kbomi16")
+      },
+      goToVelog: function() {
+        window.open("https://velog.io/@bori_note")
+      },
+      goToNotion: function() {
+        window.open("https://www.notion.so/KIM-BOMI-e095aa14ed26443ab0ddaf7e6235e3dd")
+      }
+    }
   };
 </script>
 
-<style>
+<style scoped>
 h1 {
   font-family: 'PyeongChangPeace-Bold';
   font-size: 5rem;
@@ -75,11 +86,13 @@ h1 {
 }
 .info {
   border: solid #9374a7 7px;
+  width: 75rem;
   height: 40rem;
   border-radius: 30px;
-  margin: 0 10rem;
+  margin: 0 20rem;
   position: relative;
   top: -10rem;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* swiper */
