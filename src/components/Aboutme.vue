@@ -1,6 +1,6 @@
 <template>
-  <h1>About Me.</h1>
-  <h1 class="h1text">About Me.</h1>
+  <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">About Me.</h1>
+  <h1 class="h1text" data-aos="fade-up" data-aos-anchor-placement="top-center">About Me.</h1>
 
   <div class="info" data-aos="fade-up" data-aos-anchor-placement="top-center">
     <swiper
@@ -115,17 +115,6 @@ h1 {
   position: relative;
   z-index: 1;
 }
-/* .swiper-slide::before {
-  content: attr(data-text); 
-  position: absolute;
-  top: 10;
-  left: 40;
-  font-family: 'PyeongChangPeace-Bold'; 
-  font-size: 5rem;
-  color: transparent; 
-  text-shadow: 1px 1px 2px #000; 
-  z-index: -1;
-} */
 .profile {
   display: flex;
   flex-direction: row;

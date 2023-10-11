@@ -10,25 +10,17 @@
     <a href=""><span></span>Scroll</a>
     <div class="nav">
       <div id="home" @click="scrollToComponent('container')">TOP</div>
-    </div>
-    
+    </div>  
   </div>
-  <div class="line1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
-  <div class="line2" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="900"></div>
-  <div class="line3" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"></div>
-  <div class="line4" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1100"></div>
-  <div class="line5" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1200"></div>
-  <div class="line6" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1300"></div>
-
-  
-  <div class="aboutme" data-aos="fade-up" data-aos-anchor-placement="top-center">
+ 
+  <div class="aboutme">
     <Aboutme/>
   </div>
   
   <div class="portfolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
     <Portfolio />
   </div>
-  
+
 </template>
 
 <script>
@@ -108,11 +100,11 @@ export default defineComponent({
   padding: 15rem;
   background-image: linear-gradient(90deg, #833ab4, #f6595961, #f58686);
   background-size: cover;
-  height: 100vh;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
   text-align: left;
+  
 }
 .ment {
   font-family: 'PyeongChangPeace-Light';
@@ -149,61 +141,17 @@ export default defineComponent({
 }
 
 .aboutme {
-  position: relative;
-  top: -190rem;
+  padding-top: 3rem;
   background-image: linear-gradient(180deg, #ecc6c6, #fff);
   height: 60rem;
   text-align: center;
 }
-.line1 {
-  position: relative;
-  top: -40rem;
-  background-color: #833ab4;
-  height: 30rem;
-  text-align: center;
-}
-.line2 {
-  position: relative;
-  top: -75rem;
-  background-color: #8953ac;
-  height: 30rem;
-  text-align: center;
-  padding-top: 2rem; 
-}
-.line3 {
-  position: relative;
-  top: -100rem;
-  background-color: #9374a7;
-  height: 30rem;
-  text-align: center;
-}
-.line4 {
-  position: relative;
-  top: -125rem;
-  background-color: #f58686;
-  height: 30rem;
-  text-align: center;
-}
-.line5 {
-  position: relative;
-  top: -150rem;
-  background-color: #dda0a0;
-  height: 30rem;
-  text-align: center;
-}
-.line6 {
-  position: relative;
-  top: -175rem;
-  background-color: #ecc6c6;
-  height: 30rem;
-  text-align: center;
-}
 .portfolio {
+  padding-top: 10rem;
   background-image: linear-gradient(180deg, #fff, #833ab4);
-  position: relative;
-  top: -190rem;
-  padding-top: 5rem;
+  
 }
+/* top */
 .nav {
   bottom: 1rem;
   right: 1rem;
