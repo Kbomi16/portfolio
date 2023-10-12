@@ -33,9 +33,14 @@
       <button @click="goToNotion">Notion</button>
     </div>
   </div>
-
-  </div>
-  
+  <div class="els2">
+    <img src="../assets/el5.png" alt="" class="el5" data-aos="fade-right" data-aos-anchor-placement="top-center">
+    <img src="../assets/el6.png" alt="" class="el6" data-aos="fade-left" data-aos-anchor-placement="top-center">
+    <img src="../assets/el7.png" alt="" class="el7">
+    <img src="../assets/el2.png" alt="" class="el2">
+    <img src="../assets/el8.png" alt="" class="el8" data-aos="fade-left" data-aos-anchor-placement="top-center">
+  </div> 
+  </div> 
 
 </template>
 
@@ -72,20 +77,22 @@ export default {
 h1 {
   font-family: 'PyeongChangPeace-Bold';
   font-size: 5rem;
-  color: #fff;
+  color: #D3CAC1;
+  text-align: center;
 }
 .h1text {
   font-family: 'PyeongChangPeace-Bold';
   color: transparent; /* 텍스트를 투명하게 설정 */
   font-size: 5rem;
-  -webkit-text-stroke: 2px #833ab4; /* 웹킷 브라우저 지원 */
+  -webkit-text-stroke: 2px #000; /* 웹킷 브라우저 지원 */
   -webkit-text-fill-color: transparent; /* 텍스트 내용을 투명하게 설정 */
   position: relative;
-  top: -10rem;
+  top: -9rem;
   left: -0.5rem;
 }
 .info {
-  border: solid #9374a7 7px;
+  background-color: #fff;
+  border: solid #000 7px;
   width: 75rem;
   height: 40rem;
   border-radius: 30px;
@@ -111,7 +118,7 @@ h1 {
   background-clip: text; /* 텍스트에만 배경 적용 */
   -webkit-background-clip: text; /* 웹킷 브라우저 지원 */
   color: transparent; /* 텍스트 색상을 투명하게 설정 */
-  background-image: linear-gradient(90deg, #833ab4, #fff); /* 그라데이션 배경 생성 */
+  background-image: linear-gradient(90deg, #000, #fff); /* 그라데이션 배경 생성 */
   position: relative;
   z-index: 1;
 }
@@ -124,7 +131,7 @@ h1 {
 .circle {
   width: 20rem;
   height: 20rem;
-  background-color: #fff;
+  background-color: #D3CAC1;
   border-radius: 50%;
   box-shadow: 5px 10px rgba(0, 0, 0, 0.1);  
 }
@@ -139,23 +146,58 @@ h1 {
 
 button {
   font-family: 'PyeongChangPeace-Light';
-  color: #fff;
+  color: #000;
   font-size: 2rem;
-  background-color: #833ab4;
+  background-color: #D3CAC1;
   border: none;
   border-radius: 2rem;
   font-size: 1.5rem;
   margin: 1rem 5rem;
   width: 20rem;
   padding: 0.5rem;
-  border: #833ab4 2px solid;
+  border: #D3CAC1 2px solid;
   font-weight: 800;
 }
 button:hover {
-  background-color: #fff;
-  color: #833ab4;
+  background-color: #D3CAC1;
+  color: #fff;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
+.els2 {
+  position: absolute;
+}
+.el5 {
+  position: relative;
+  top: -30rem;
+  left: -23rem;
+  z-index: -1000;
+}
+.el6 {
+  position: relative;
+  top: -30rem;
+  left: 50rem;
+  z-index: -1000;
+}
+.el8 {
+  position: relative;
+  top: -90rem;
+  left: 70rem;
+  z-index: 1000;
+}
+.el7 {
+  position: relative;
+  width: 35rem;
+  top: -63rem;
+  left: 5rem;
+  z-index: 10;
+}
+.el2 {
+  position: relative;
+  top: -48rem;
+  left: -42rem;
+  z-index: 10;
+  transform: scaleX(-1);
+}
 </style>

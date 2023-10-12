@@ -52,6 +52,7 @@
 <style scoped>
 #portfolio {
   height: 100vh;
+  padding: 3rem;
 }
 h1 {
   font-family: 'PyeongChangPeace-Bold';
@@ -63,11 +64,11 @@ h1 {
   font-family: 'PyeongChangPeace-Bold';
   color: transparent; /* 텍스트를 투명하게 설정 */
   font-size: 5rem;
-  -webkit-text-stroke: 2px #833ab4; /* 웹킷 브라우저 지원 */
+  -webkit-text-stroke: 2px #D3CAC1; /* 웹킷 브라우저 지원 */
   -webkit-text-fill-color: transparent; /* 텍스트 내용을 투명하게 설정 */
   position: relative;
-  top: -10rem;
-  left: -0.5rem;
+  top: -9.1rem;
+  left: -0.6rem;
 }
 .swiper {
   width: 100%;

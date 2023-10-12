@@ -1,26 +1,33 @@
 <template>
   <div class="container">
-      <div class="ment">코드로 아이디어를 현실로, <br/>직관적이고 미적인 웹을 만드는 열정을 가진</div>
+    <Header></Header>
+
+      <div class="text1">
+        <div class="ment">코드로 아이디어를 현실로, <br/>직관적이고 미적인 웹을 만드는 열정을 가진</div>
       <p class="text">{{ displayText }}</p>   
+      <div class="ellipse"></div>
+      </div>
+
+      <div class="text2">
+        <h1>2023 <br/> Portfolio</h1>
+        <h1 class="h1text">2023 <br/> Portfolio</h1>
+      </div>
+
+      <div class="els">
+        <img src="../assets/el1.png" alt="" class="el1">
+        <img src="../assets/el2.png" alt="" class="el2">
+        <img src="../assets/el3.png" alt="" class="el3">
+      </div>
     
-    <div class="square1">
-    <img src="../assets/bomi.png" alt="">
-  </div>
-    <div class="square2"></div>
-    <a href=""><span></span>Scroll</a>
-    <div class="nav">
-      <div id="home" @click="scrollToComponent('container')">TOP</div>
-    </div>  
+    <a href=""><span></span></a>
   </div>
  
-  <div class="aboutme">
     <Aboutme/>
-  </div>
-  
-  <div class="portfolio" data-aos="fade-up" data-aos-anchor-placement="top-center">
+  <div class="portfolio">
     <Portfolio />
   </div>
 
+<Footer></Footer>
 </template>
 
 <script>
@@ -28,8 +35,11 @@ import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css';
 import aos from 'aos';
+
 import Portfolio from '@/components/Portfolio.vue';
 import Aboutme from '@/components/Aboutme.vue'
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue'
 
 export default defineComponent({
   name: 'HomeView',
@@ -38,7 +48,9 @@ export default defineComponent({
       Swiper,
       SwiperSlide,
       Portfolio,
-      Aboutme
+      Aboutme,
+      Header,
+      Footer
   },
   data() {
     return {
@@ -60,15 +72,12 @@ export default defineComponent({
       setTimeout(this.writeText, this.speed);
     },
 
-    scrollToComponent(componentId) {
-      if (componentId === 'container') {
-        // "Home"을 클릭하면 맨 위로 스크롤
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-    }
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    },
   },
   mounted() {
     aos.init();
@@ -95,16 +104,19 @@ export default defineComponent({
   font-family: 'PyeongChangPeace-Bold';
   src: url('../assets/fonts/PyeongChangPeace-Bold.ttf');
 }
+@font-face {
+  font-family: 'neurimboGothicRegular';
+  src: url('../assets/fonts/neurimboGothicRegular.otf');
+}
 
 .container {
-  padding: 15rem;
-  background-image: linear-gradient(90deg, #833ab4, #f6595961, #f58686);
-  background-size: cover;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  text-align: left;
+  background-image: url('https://i.pinimg.com/736x/79/7b/57/797b571b4f1631fd6e28428cb37dd1d9.jpg');
+  height: 100vh;
+  background-position: center;
   
+}
+.text1 {
+  padding: 20rem;
 }
 .ment {
   font-family: 'PyeongChangPeace-Light';
@@ -118,75 +130,51 @@ export default defineComponent({
   font-size: 3rem;
   text-shadow: 5px 3px 5px #000;
 }
-.square1 {
-  width: 28rem;
-  height: 26.2rem;
-  background-color: #EFEFEF;
-  position: relative;
-  top: -18rem;
-  left: 50rem;
-  z-index: 1;
-  border-radius: 1rem;
-  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
-}
-.square2 {
-  width: 28rem;
-  height: 26.2rem;
-  background-color: #833ab4;
-  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+
+.ellipse {
   position: absolute;
-  top: 10rem;
-  left: 64rem;
-  border-radius: 1rem;
+  top: 15rem;
+  left: 0;
+  width: 100%;
+  height: 28vw; /* 조절 가능한 타원의 높이 */
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000; /* 검정 테두리 */
+  transform: rotate(10deg);
+}
+.text2 {
+  font-family: 'neurimboGothicRegular';
+  position: absolute;
+  left: 75rem;
+  top: -50rem;
+  color: #fff;
+  position: relative;
+  text-align: left;
+  z-index: 2; /* text2를 text1과 원 위에 위치시키기 위한 z-index 값 설정 */
+}
+h1 {
+  font-size: 10rem;
+  color: #fff;
+}
+.h1text {
+  color: transparent; /* 텍스트를 투명하게 설정 */
+  font-size: 10rem;
+  -webkit-text-stroke: 1px #000; /* 웹킷 브라우저 지원 */
+  -webkit-text-fill-color: transparent; /* 텍스트 내용을 투명하게 설정 */
+  position: relative;
+  top: -30rem;
+  left: -0.5rem;
 }
 
-.aboutme {
-  padding-top: 3rem;
-  background-image: linear-gradient(180deg, #ecc6c6, #fff);
-  height: 60rem;
-  text-align: center;
-}
-.portfolio {
-  padding-top: 10rem;
-  background-image: linear-gradient(180deg, #fff, #833ab4);
-  
-}
-/* top */
-.nav {
-  bottom: 1rem;
-  right: 1rem;
-  position: fixed;
-  z-index: 100;
-}
-#home {
-  font-family: 'PyeongChangPeace-Light';
-  background-color: #0000005a;
-  color: #fff;
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-#home:hover{
-  background-color: #000000ac;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
+
 /* 스크롤 표시 */
 a {
-  padding-top: 60px;
-  color: #fff;
-  font-size: 1.5rem;
+  font-family: 'AppleSDGothicNeoB';
+  color: #000;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  padding-left: 42.5rem;
+  padding-left: 58rem;
 }
 a span {
   position: absolute;
@@ -195,7 +183,7 @@ a span {
   width: 30px;
   height: 50px;
   margin-left: -15px;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 50px;
   box-sizing: border-box;
 }
@@ -207,7 +195,7 @@ a span::before {
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 100%;
   -webkit-animation: sdb 2s infinite;
   animation: sdb 2s infinite;
@@ -246,4 +234,27 @@ a span::before {
   }
 }
 
+.els {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.el1 {
+  position: relative;
+  top: 5rem;
+  left: -5rem;
+}
+.el2 {
+  position: relative;
+  top: 30rem;
+  left: 55rem;
+}
+.el3 {
+  position: relative;
+  top: 30rem;
+  left: -40rem;
+}
+.portfolio {
+  background-color: #000;
+}
 </style>
