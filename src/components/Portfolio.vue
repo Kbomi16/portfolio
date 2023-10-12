@@ -1,10 +1,12 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
+  
     <div id="portfolio">
       <h1>Projects.</h1>
       <h1 class="h1text">Projects.</h1>
   
       <swiper
-    ref="{swiperRef}"
+    ref="swiperRef"
     :slidesPerView="3"
     :centeredSlides="true"
     :spaceBetween="40"
@@ -20,7 +22,7 @@
   </swiper>
 
     </div>
-  </template>
+</template>
   
   <script>
   import { Swiper, SwiperSlide } from 'swiper/vue';
