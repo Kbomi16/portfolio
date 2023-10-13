@@ -45,7 +45,9 @@ export default defineComponent({
   name: 'HomeView',
 
   components: {
+      // eslint-disable-next-line vue/no-unused-components
       Swiper,
+      // eslint-disable-next-line vue/no-unused-components
       SwiperSlide,
       Portfolio,
       Aboutme,
@@ -108,7 +110,10 @@ export default defineComponent({
   font-family: 'neurimboGothicRegular';
   src: url('../assets/fonts/neurimboGothicRegular.otf');
 }
-
+body {
+  width: 100vw;
+  overflow-x: hidden
+}
 .container {
   background-image: url('https://i.pinimg.com/736x/79/7b/57/797b571b4f1631fd6e28428cb37dd1d9.jpg');
   height: 100vh;
@@ -256,5 +261,6 @@ a span::before {
 }
 .portfolio {
   background-color: #000;
+  height: 100%;
 }
 </style>

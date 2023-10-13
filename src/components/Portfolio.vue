@@ -6,19 +6,18 @@
       <h1 class="h1text">Projects.</h1>
   
       <swiper
-    ref="swiperRef"
-    :slidesPerView="3"
-    :centeredSlides="true"
-    :spaceBetween="40"
-    :navigation="true"
+    :spaceBetween="30"
+    :pagination="{
+      clickable: true,
+    }"
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide @click="movePage('/project1')"><img src="../assets/001.png" alt="Project 1" /></swiper-slide>
-    <swiper-slide @click="movePage('/project2')"><img src="../assets/002.png" alt="Project 2" /></swiper-slide>
-    <swiper-slide @click="movePage('/project4')"><img src="../assets/004.png" alt="Project 4" /></swiper-slide>
-    <swiper-slide @click="movePage('/project5')"><img src="../assets/005.png" alt="Project 5" /></swiper-slide>
-    <swiper-slide @click="movePage('/project6')"><img src="../assets/006.png" alt="Project 6" /></swiper-slide>
+    <swiper-slide>Slide 1</swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
   </swiper>
 
     </div>
@@ -51,7 +50,7 @@
 
 <style scoped>
 #portfolio {
-  height: 100vh;
+  height: 100%;
   padding: 3rem;
 }
 h1 {
@@ -70,33 +69,29 @@ h1 {
   top: -9.1rem;
   left: -0.6rem;
 }
+
 .swiper {
   width: 100%;
-  height: 100%;
-  padding-bottom: 1rem;
+  height: 100vh;
 }
 
 .swiper-slide {
-  background-position: center center;
-  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  width: 20rem !important;
 }
 
 .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
-
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin: 20px auto;
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  color: #000 !important;
 }
 </style>
   

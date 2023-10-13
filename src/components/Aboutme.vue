@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">About Me.</h1>
   <h1 class="h1text" data-aos="fade-up" data-aos-anchor-placement="top-center">About Me.</h1>
@@ -10,7 +11,6 @@
       delay: 2000,
       disableOnInteraction: false,
     }"
-    :navigation="true"
     :modules="modules"
     class="mySwiper"
   >
