@@ -20,6 +20,7 @@
       </div>
     
     <a href=""><span></span></a>
+    <p class="scroll">SCROLL</p>
   </div>
  
     <Aboutme/>
@@ -205,6 +206,15 @@ a span::before {
   -webkit-animation: sdb 2s infinite;
   animation: sdb 2s infinite;
   box-sizing: border-box;
+}
+.scroll {
+  position: absolute;
+  top: 53rem;
+  left: 57.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000;
+  font-family: 'AppleSDGothicNeoB';
 }
 @-webkit-keyframes sdb {
   0% {

@@ -4,6 +4,8 @@
     <div id="portfolio">
       <h1>Projects.</h1>
       <h1 class="h1text">Projects.</h1>
+
+      <p>슬라이드를 클릭하면 더 자세한 내용을 볼 수 있습니다.</p>
   
       <swiper
     :spaceBetween="30"
@@ -12,12 +14,17 @@
     }"
     :modules="modules"
     class="mySwiper"
+    :mousewheel="{ invert: false }"
   >
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+    <swiper-slide><img src="../assets/project(1).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(2).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(3).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(4).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(5).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(6).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(7).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(8).png" alt=""></swiper-slide>
+    <swiper-slide><img src="../assets/project(9).png" alt=""></swiper-slide>
   </swiper>
 
     </div>
@@ -28,7 +35,7 @@
   import 'swiper/css';
   import 'swiper/css/pagination';
   import 'swiper/css/navigation';
-  import { Pagination, Navigation } from 'swiper/modules';
+  import { Pagination, Navigation, Mousewheel } from 'swiper/modules';
 
   export default {
     components: {
@@ -37,7 +44,7 @@
     },
     setup() {
       return {
-        modules: [Pagination, Navigation],
+        modules: [Pagination, Navigation, Mousewheel],
       };
     },
     methods: {
@@ -69,10 +76,19 @@ h1 {
   top: -9.1rem;
   left: -0.6rem;
 }
+p {
+  font-family: 'AppleSDGothicNeoUL';
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  top: -10rem;
+}
 
 .swiper {
-  width: 100%;
-  height: 100vh;
+  width: 80%;
+  height: 100%;
+  border: 1px solid #fff;
 }
 
 .swiper-slide {
@@ -90,8 +106,12 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination-bullet .swiper-pagination-bullet-active {
+.swiper-pagination-bullet {
+  color: #fff !important;
+}
+.swiper-pagination-bullet-active {
   color: #000 !important;
 }
+
 </style>
   
