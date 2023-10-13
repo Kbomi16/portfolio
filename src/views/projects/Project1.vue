@@ -1,6 +1,6 @@
 <!-- eslint-disable -->
 <template>
-  <div>포트폴리오1</div>
+  <div>TOYTIE</div>
   <div class='box'>
   <div class='wave -one'></div>
   <div class='wave -two'></div>
