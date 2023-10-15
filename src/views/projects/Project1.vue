@@ -1,102 +1,159 @@
 <!-- eslint-disable -->
 <template>
-  <div>TOYTIE</div>
-  <div class='box'>
-  <div class='wave -one'></div>
-  <div class='wave -two'></div>
-  <div class='wave -three'></div>
-  <div class='title'>Capacities</div>
-</div>
+  <Header @click="movePage('/')"></Header>
+  <div class="container">
+
+    <div class="section1">
+      <img src="../../assets/project(1).png" alt="">
+    </div>
+
+    <div class="section2">
+      <button @click="goToGitHub"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt=""></button>
+      <button @click="goToNotion"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png" alt=""></button>
+    </div>
+
+    <div class="section3">
+      <h1>동작 화면 캡쳐/기능 설명</h1>
+      <swiper
+    :slidesPerView="4"
+    :centeredSlides="true"
+    :spaceBetween="30"
+    :grabCursor="true"
+    :pagination="{
+      clickable: true,
+    }"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide><img src="../../assets/project1/p1.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p2.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p3.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p4.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p5.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p6.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p7.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p8.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p9.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p10.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p11.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p12.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p13.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p14.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p15.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p16.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p17.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p18.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project1/p19.png" alt=""></swiper-slide>
+  </swiper>
+
+    </div>
+
+  </div>
+  <Footer></Footer>
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue'
+
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
 export default {
-  
+  components: {
+      Header,
+      Footer,
+      Swiper,
+      SwiperSlide,
+  },
+  setup() {
+      return {
+        modules: [Pagination],
+      };
+    },
+  methods: {
+      movePage(path) {
+        this.$router.push(path);
+        
+      },
+      goToGitHub: function() {
+        window.open("https://github.com/Kbomi16/Toytie")
+      },
+      goToNotion: function() {
+        window.open("https://saber-lip-4c8.notion.site/ToyTie-f02758e906de49adbd54d2fcd5910f7c?pvs=4")
+      },
+    },
 }
 </script>
 
 <style scoped>
-html, body {
+.container {
+  padding-top: 3rem;
   height: 100%;
 }
 
-html {
-  background: #eee;
+.section1 {
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2 {
+  background-color: #000;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding-left: 20rem;
+  padding-bottom: 3rem;
+}
+.section2 button {
+  position: relative;
+  top: -10rem;
+  left: 70rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+}
+.section2 img {
+  width: 3rem;
+  height: 3rem;
 }
 
-body {
+.section3 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: 'AppleSDGothicNeoB';
+  color: #000;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 30rem;
+}
+
+.swiper-slide {
+  width: 50rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box {
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: 0 2px 30px rgba(black, .2);
-  background: lighten(#f0f4c3, 10%);
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.wave {
-  opacity: .4;
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  background: #0af;
-  width: 500px;
-  height: 500px;
-  margin-left: -250px;
-  margin-top: -250px;
-  transform-origin: 50% 48%;
-  border-radius: 43%;
-  animation: drift 3000ms infinite linear;
-}
-
-.wave.-three {
-  animation: drift 5000ms infinite linear;
-}
-
-.wave.-two {
-  animation: drift 7000ms infinite linear;
-  opacity: .1;
-  background: yellow;
-}
-
-.box:after {
-  content: '';
+.swiper-slide img {
   display: block;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
+  object-fit: contain;
 }
 
-.title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  line-height: 300px;
-  text-align: center;
-  transform: translate3d(0, 0, 0);
-  color: white;
-  text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: .4em;
-  font-size: 24px;
-  text-shadow: 0 1px 0 rgba(black, .1);
-  text-indent: .3em;
-}
-@keyframes drift {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
-}
+
 </style>
