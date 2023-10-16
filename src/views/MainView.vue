@@ -209,7 +209,7 @@ a span::before {
 }
 .scroll {
   position: absolute;
-  top: 53rem;
+  top: 55rem;
   left: 57.5rem;
   font-size: 1.2rem;
   text-align: center;

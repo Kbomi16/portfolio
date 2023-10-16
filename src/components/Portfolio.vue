@@ -108,10 +108,10 @@ p {
   object-fit: cover;
 }
 .swiper-pagination-bullet {
-  color: #fff !important;
+  background: #000000 !important;
 }
 .swiper-pagination-bullet-active {
-  color: #000 !important;
+  background: #000000 !important;
 }
 
 </style>

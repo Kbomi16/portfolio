@@ -27,7 +27,6 @@
       <img class="img1" src="../assets/bomi2.png" alt="">
     </div>
     <div class="infos">
-      <button>Resume</button>
       <button @click="goToGitHub">GitHub</button>
       <button @click="goToVelog">Velog</button>
       <button @click="goToNotion">Notion</button>

@@ -13,39 +13,7 @@
     </div>
 
     <div class="section3">
-      <h1>동작 화면 캡쳐/기능 설명</h1>
-      <swiper
-    :slidesPerView="4"
-    :centeredSlides="true"
-    :spaceBetween="30"
-    :grabCursor="true"
-    :pagination="{
-      clickable: true,
-    }"
-    :modules="modules"
-    class="mySwiper"
-  >
-  <swiper-slide><img src="../../assets/project1/p1.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p2.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p3.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p4.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p5.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p6.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p7.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p8.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p9.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p10.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p11.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p12.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p13.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p14.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p15.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p16.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p17.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p18.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project1/p19.png" alt=""></swiper-slide>
-  </swiper>
-
+      <h1>진행중</h1>
     </div>
 
   </div>
