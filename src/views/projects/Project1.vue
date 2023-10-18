@@ -15,9 +15,9 @@
     <div class="section3">
       <h1>동작 화면 캡쳐/기능 설명</h1>
       <swiper
-    :slidesPerView="4"
+    :slidesPerView="2"
     :centeredSlides="true"
-    :spaceBetween="30"
+    :spaceBetween="100"
     :grabCursor="true"
     :pagination="{
       clickable: true,
@@ -139,13 +139,10 @@ h1 {
 .swiper {
   width: 100%;
   height: 30rem;
+  padding-bottom: 5rem;
 }
-
 .swiper-slide {
-  width: 50rem !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50rem!important;
 }
 
 .swiper-slide img {
@@ -154,6 +151,12 @@ h1 {
   height: 100%;
   object-fit: contain;
 }
+::v-deep .swiper-pagination-bullet {
+  background: #000 !important;
+}
 
+::v-deep .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
 
 </style>

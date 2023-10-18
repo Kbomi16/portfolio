@@ -157,6 +157,7 @@ p {
   width: 100%;
   height: 30rem;
   padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .swiper-slide {
@@ -174,6 +175,12 @@ p {
   height: 100%;
   object-fit: contain;
 }
+::v-deep .swiper-pagination-bullet {
+  background: #000 !important;
+}
 
+::v-deep .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
 
 </style>

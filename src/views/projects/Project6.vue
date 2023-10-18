@@ -27,9 +27,9 @@
     <div class="section3">
       <h1>동작 화면 캡쳐</h1>
       <swiper
-    :slidesPerView="4"
+    :slidesPerView="2"
     :centeredSlides="true"
-    :spaceBetween="30"
+    :spaceBetween="100"
     :grabCursor="true"
     :pagination="{
       clickable: true,
@@ -156,5 +156,11 @@ p {
   object-fit: contain;
 }
 
+::v-deep .swiper-pagination-bullet {
+  background: #000 !important;
+}
 
+::v-deep .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
 </style>

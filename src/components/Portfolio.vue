@@ -107,12 +107,14 @@ p {
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination-bullet {
-  background: #000000 !important;
+::v-deep .swiper-pagination-bullet {
+  background: #fff !important;
 }
-.swiper-pagination-bullet-active {
-  background: #000000 !important;
+
+::v-deep .swiper-pagination-bullet-active {
+  background: #fff !important;
 }
+
 
 </style>
   

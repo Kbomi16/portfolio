@@ -1,2 +1,1 @@
-할 일 목록
-- 퓨미즈 페이지 수정
+kbomi16.github.io/portfolio/

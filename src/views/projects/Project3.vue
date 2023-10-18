@@ -107,6 +107,7 @@ h1 {
 .swiper {
   width: 100%;
   height: 30rem;
+  padding-bottom: 5rem;
 }
 
 .swiper-slide {

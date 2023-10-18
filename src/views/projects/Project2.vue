@@ -15,7 +15,7 @@
     <div class="section3">
       <h1>동작 화면 캡쳐/기능 설명</h1>
       <swiper
-    :slidesPerView="4"
+    :slidesPerView="2"
     :centeredSlides="true"
     :spaceBetween="30"
     :grabCursor="true"
@@ -25,21 +25,21 @@
     :modules="modules"
     class="mySwiper"
   >
-  <swiper-slide><img src="https://file.notion.so/f/s/0285efc7-f8cd-4bf2-a7af-51da816fc12f/chrome-capture-2023-7-21.gif?id=b901f1f1-b76d-4e7a-9058-c5943031c093&table=block&spaceId=6bf245e8-dd07-48b2-b775-05b6b4aa4af9&expirationTimestamp=1697436000000&signature=0zSMTFtASqtJkG-hXrZ_ajx9AfTY5kJXGQk1nhvNQHU&downloadName=chrome-capture-2023-7-21.gif" alt="">
+  <swiper-slide><img src="@/assets/project2/p1.gif" alt="">
     - 수량을 정하여 +담기를 누르면 장바구니에 담긴다. <br/>
 - 장바구니에 수량이 추가될때마다 버튼 이펙트가 발생한다.</swiper-slide>
-    <swiper-slide><img src="https://file.notion.so/f/s/7df09c80-8f73-471e-8026-2686ab6f5ef3/chrome-capture-2023-7-21_(1).gif?id=082e584e-3b2b-445f-8fab-9fe0e678e6f0&table=block&spaceId=6bf245e8-dd07-48b2-b775-05b6b4aa4af9&expirationTimestamp=1697436000000&signature=yYgvnot88YDBMjZWYos7t4vcL6wQ5bBOQumejAZOMBU&downloadName=chrome-capture-2023-7-21+%281%29.gif" alt="">
+    <swiper-slide><img src="@/assets/project2/p2.gif" alt="">
     - 장바구니 모달 안에서 -. + 버튼으로 수량 조절이 가능하다.
     </swiper-slide>
-    <swiper-slide><img src="https://file.notion.so/f/s/c7527664-cfd2-4ed5-acfb-1c883a334001/Untitled.png?id=dd2b5e7b-57f9-4a82-92f2-dfe4ac285eb2&table=block&spaceId=6bf245e8-dd07-48b2-b775-05b6b4aa4af9&expirationTimestamp=1697443200000&signature=AtguzqW8XQ4xrXfx0sG6qQVFifYzX5c9sEfq2SToMFw&downloadName=Untitled.png" alt="">
+    <swiper-slide><img src="@/assets/project2/p3.png" alt="">
     - 파이어베이스에 연동하여 음식 목록 가져온다.
     </swiper-slide>
-    <swiper-slide><img src="https://file.notion.so/f/s/53838a6f-f175-4de0-a74a-4091e1f10cad/chrome-capture-2023-7-27.gif?id=d5a6b842-4728-48af-b517-e372b6d98d0c&table=block&spaceId=6bf245e8-dd07-48b2-b775-05b6b4aa4af9&expirationTimestamp=1697443200000&signature=5uAiq9XCjjS4jeKAeTb67Qx1kRMih1KpIvUDeb6aZTg&downloadName=chrome-capture-2023-7-27.gif" alt="">
+    <swiper-slide><img src="@/assets/project2/p4.gif" alt="">
       - 주문하기 버튼을 누르면 아래 결제 양식 창이 뜬다.<br/>
 - 결제 양식 창에 있는 취소버튼을 누르면 장바구니 모달이 닫힌다.<br/>
 - 입력 창에 아무것도 입력 안 할 시 빨갛게 변하면서 정확한 입력을 하라는 오류 문구가 밑에 뜬다.
     </swiper-slide>
-    <swiper-slide><img src="https://file.notion.so/f/s/6b759e8c-5252-42da-8cb4-fd47c5619007/chrome-capture-2023-7-29_(1).gif?id=c8b69aa7-61b0-4737-883b-636209852b1f&table=block&spaceId=6bf245e8-dd07-48b2-b775-05b6b4aa4af9&expirationTimestamp=1697443200000&signature=597PjOw0IK37fOl5ZqekUO5TRgAYjyzFiWCkaA-ybvw&downloadName=chrome-capture-2023-7-29+%281%29.gif" alt="">
+    <swiper-slide><img src="@/assets/project2/p5.gif" alt="">
       - 주문 정보와 장바구니 아이템이 서버에 전송되며, 서버는 이 정보를 기반으로 주문을 처리하고 저장한다.<br/>
 - 장바구니 모달에서 주문하기를 눌렀을 때 문구가 나온다.<br/>
 - 주문 후, 장바구니기 비워진다.<br/>
@@ -157,6 +157,12 @@ h1 {
   height: 100%;
   object-fit: contain;
 }
+::v-deep .swiper-pagination-bullet {
+  background: #000 !important;
+}
 
+::v-deep .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
 
 </style>
