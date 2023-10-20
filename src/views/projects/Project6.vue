@@ -43,17 +43,6 @@
     <swiper-slide><img src="../../assets/project6/p4.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project6/p5.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project6/p6.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p7.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p8.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p9.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p10.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p11.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p12.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p13.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p14.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p15.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p16.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project6/p17.png" alt=""></swiper-slide>
   </swiper>
 
     </div>
@@ -142,7 +131,7 @@ p {
 
 .swiper-slide {
   font-family: 'AppleSDGothicNeoUL';
-  width: 50rem !important;
+  width: 60rem !important;
   display: flex;
   flex-direction: column;
   justify-content: center;

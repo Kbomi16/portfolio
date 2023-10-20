@@ -38,8 +38,6 @@
   >
   <swiper-slide><img src="../../assets/project5/p1.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project5/p2.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project5/p3.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project5/p4.png" alt=""></swiper-slide>
   </swiper>
 
     </div>
@@ -155,7 +153,7 @@ p {
 
 .swiper-slide {
   font-family: 'AppleSDGothicNeoUL';
-  width: 30rem !important;
+  width: 60rem !important;
   display: flex;
   flex-direction: column;
   justify-content: center;

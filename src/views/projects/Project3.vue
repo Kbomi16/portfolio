@@ -13,9 +13,25 @@
     </div>
 
     <div class="section3">
-      <h1>진행중</h1>
-    </div>
+      <h1>(개발진행중)동작 화면 캡쳐/기능 설명</h1>
+      <swiper
+    :slidesPerView="2"
+    :centeredSlides="true"
+    :spaceBetween="30"
+    :grabCursor="true"
+    :pagination="{
+      clickable: true,
+    }"
+    :modules="modules"
+    class="mySwiper"
+  >
+  <swiper-slide><img src="../../assets/project3/p1.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p2.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p3.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p4.png" alt=""></swiper-slide>
+  </swiper>
 
+  </div>
   </div>
   <Footer></Footer>
 </template>
@@ -123,6 +139,12 @@ h1 {
   height: 100%;
   object-fit: contain;
 }
+::v-deep .swiper-pagination-bullet {
+  background: #000 !important;
+}
 
+::v-deep .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
 
 </style>

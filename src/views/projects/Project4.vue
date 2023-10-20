@@ -45,15 +45,6 @@
     <swiper-slide><img src="../../assets/project4/p3.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project4/p4.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project4/p5.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p6.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p7.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p8.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p9.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p10.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p11.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p12.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p13.png" alt=""></swiper-slide>
-    <swiper-slide><img src="../../assets/project4/p14.png" alt=""></swiper-slide>
   </swiper>
 
     </div>
