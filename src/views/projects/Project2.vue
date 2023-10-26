@@ -104,15 +104,12 @@ export default {
 .section2 {
   background-color: #000;
   display: flex;
-  align-items: left;
-  justify-content: left;
-  padding-left: 20rem;
-  padding-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 .section2 button {
   position: relative;
-  top: -10rem;
-  left: 8rem;
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 10px;

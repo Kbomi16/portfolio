@@ -92,7 +92,7 @@ h1 {
 .info {
   background-color: #fff;
   border: solid #000 7px;
-  width: 75rem;
+  width: 70rem;
   height: 40rem;
   border-radius: 30px;
   margin: 0 20rem;

@@ -19,11 +19,12 @@
         <img src="../assets/el3.png" alt="" class="el3">
       </div>
     
-    <a href=""><span></span></a>
-    <p class="scroll">SCROLL</p>
+    
   </div>
- 
+  <div class="aboutme">
     <Aboutme/>
+  </div>
+
   <div class="portfolio">
     <Portfolio />
   </div>
@@ -151,7 +152,7 @@ body {
 .text2 {
   font-family: 'neurimboGothicRegular';
   position: absolute;
-  left: 75rem;
+  left: 65rem;
   top: -50rem;
   color: #fff;
   position: relative;
@@ -172,83 +173,6 @@ h1 {
   left: -0.5rem;
 }
 
-
-/* 스크롤 표시 */
-a {
-  font-family: 'AppleSDGothicNeoB';
-  color: #000;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  padding-left: 58rem;
-}
-a span {
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #000;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #000;
-  border-radius: 100%;
-  -webkit-animation: sdb 2s infinite;
-  animation: sdb 2s infinite;
-  box-sizing: border-box;
-}
-.scroll {
-  position: absolute;
-  top: 55rem;
-  left: 57.5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #000;
-  font-family: 'AppleSDGothicNeoB';
-}
-@-webkit-keyframes sdb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .els {
   position: absolute;
   top: 0;
@@ -261,13 +185,16 @@ a span::before {
 }
 .el2 {
   position: relative;
-  top: 30rem;
-  left: 55rem;
+  top: 20rem;
+  left: 45rem;
 }
 .el3 {
   position: relative;
   top: 30rem;
   left: -40rem;
+}
+.aboutme {
+  width: 100%;
 }
 .portfolio {
   background-color: #000;
