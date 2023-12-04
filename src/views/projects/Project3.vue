@@ -13,7 +13,7 @@
     </div>
 
     <div class="section3">
-      <h1>(개발진행중)동작 화면 캡쳐/기능 설명</h1>
+      <h1>동작 화면 캡쳐/기능 설명</h1>
       <swiper
     :slidesPerView="2"
     :centeredSlides="true"
@@ -29,6 +29,15 @@
     <swiper-slide><img src="../../assets/project3/p2.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project3/p3.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project3/p4.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p5.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p6.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p7.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p8.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p9.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p10.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p11.png" alt=""></swiper-slide>
+    <swiper-slide><img src="../../assets/project3/p12.png" alt=""></swiper-slide>
+
   </swiper>
 
   </div>
