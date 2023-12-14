@@ -45,6 +45,11 @@
     <swiper-slide><img src="../../assets/project4/p3.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project4/p4.png" alt=""></swiper-slide>
     <swiper-slide><img src="../../assets/project4/p5.png" alt=""></swiper-slide>
+    <swiper-slide></swiper-slide>
+    <swiper-slide></swiper-slide>
+    <swiper-slide></swiper-slide>
+    <swiper-slide></swiper-slide>
+    <swiper-slide></swiper-slide>
   </swiper>
 
     </div>
@@ -141,20 +146,16 @@ p {
   font-size: 20px;
 }
 
+
 .swiper {
   width: 100%;
   height: 30rem;
-  padding-bottom: 5rem;
   padding-bottom: 5rem;
 }
 
 .swiper-slide {
   font-family: 'AppleSDGothicNeoUL';
-  width: 50rem !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 60rem !important;
 }
 
 .swiper-slide img {

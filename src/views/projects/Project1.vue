@@ -139,7 +139,7 @@ h1 {
   padding-bottom: 5rem;
 }
 .swiper-slide {
-  width: 50rem!important;
+  width: 50rem !important;
 }
 
 .swiper-slide img {
