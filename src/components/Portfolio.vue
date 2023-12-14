@@ -18,7 +18,7 @@
   >
     <swiper-slide @click="movePage('/project3')"><img src="../assets/project(3).png" alt=""></swiper-slide>
     <swiper-slide @click="movePage('/project2')"><img src="../assets/project(2).png" alt=""></swiper-slide>
-    <swiper-slide @click="movePage('/project3')"><img src="../assets/project(1).png" alt=""></swiper-slide>
+    <swiper-slide @click="movePage('/project1')"><img src="../assets/project(1).png" alt=""></swiper-slide>
     <swiper-slide @click="movePage('/project4')"><img src="../assets/project(4).png" alt=""></swiper-slide>
     <swiper-slide @click="movePage('/project5')"><img src="../assets/project(5).png" alt=""></swiper-slide>
     <swiper-slide @click="movePage('/project6')"><img src="../assets/project(6).png" alt=""></swiper-slide>
