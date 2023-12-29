@@ -9,8 +9,8 @@
       </div>
 
       <div class="text2">
-        <h1>2023 <br/> Portfolio</h1>
-        <h1 class="h1text">2023 <br/> Portfolio</h1>
+        <h1>2024 <br/> Portfolio</h1>
+        <h1 class="h1text">2024 <br/> Portfolio</h1>
       </div>
 
       <div class="els">

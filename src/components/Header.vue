@@ -1,8 +1,7 @@
-<!-- Header.vue -->
-
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header class="header" :class="{ scrolled: isScrolled }">
-    <div class="header-item">2023</div>
+    <div class="header-item">2024</div>
     <div class="header-item" @click="scrollToTop">PORTFOLIO</div>
     <div class="header-item">KIM BOMI</div>
   </header>
@@ -33,7 +32,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   },
 };
