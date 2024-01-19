@@ -66,7 +66,7 @@ export default {
         window.open("https://velog.io/@bori_note")
       },
       goToNotion: function() {
-        window.open("https://www.notion.so/KIM-BOMI-e095aa14ed26443ab0ddaf7e6235e3dd")
+        window.open("https://saber-lip-4c8.notion.site/KIM-BOMI-4b670b5efdcb4ab4be31664779248984?pvs=4")
       }
     }
   };
